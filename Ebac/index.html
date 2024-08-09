@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu exercicio Ebac</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: black;
+            font: normal Arial;
+            margin: 20px;
+            padding:20px;
+            
+        }
+        input{
+            height: 30px;
+            width: 150px;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparando números</h1>
+    <form action="">
+        <input type="number" id="num1" placeholder="Insira um número" required min="0" max="100"> VS 
+        <input type="number" id="num2" placeholder="Insira outro número" required min="0" max="100">
+        <button id="buttonC" type="submit"><strong>Comparar</strong></button>
+    </form>
+    <div id="res">Resultado:</div>
+    <script>
+        var n1 =window.document.getElementById('num1')
+        var n2 =window.document.querySelector('input#num2')
+        var n1= Number(num1.value)
+        var n2= Number(num2.value)
+        var res =window.document.getElementById('res')
+        var res= Number(res.value)
+        if( n1<=n2){
+            alert("o primeiro numero é menor que o segundo")
+        }else if(n1>=n2){
+            alert("o primeiro numero é maior que o segundo")
+            
+        }
+
+    </script>
+    
+</body>
+</html>
