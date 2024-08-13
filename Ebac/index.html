@@ -28,7 +28,7 @@
     <form action="">
         <input type="number" id="num1" placeholder="Insira um número" required min="0" max="100"> VS 
         <input type="number" id="num2" placeholder="Insira outro número" required min="0" max="100">
-        <button id="buttonC" type="submit"><strong>Comparar</strong></button>
+        <button id="buttonC" type="submit" onclick="comparar()"><strong>Comparar</strong></button>
     </form>
     <div id="res">Resultado:</div>
     <script>
@@ -38,12 +38,15 @@
         var n2= Number(num2.value)
         var res =window.document.getElementById('res')
         var res= Number(res.value)
-        if( n1<=n2){
-            alert("o primeiro numero é menor que o segundo")
+        function comparar(){
+            if(n1<=n2){
+                alert{("o primeiro numero é menor que o segundo")
+            }
         }else if(n1>=n2){
             alert("o primeiro numero é maior que o segundo")
             
         }
+    }
 
     </script>
     
